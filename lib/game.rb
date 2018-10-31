@@ -18,4 +18,7 @@ class Game
   def player2
     @players.last
   end
+
+  def start
+  end 
 end

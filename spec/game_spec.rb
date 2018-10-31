@@ -29,7 +29,13 @@ describe Game do
       expect{ subject.add_player(player_n)}.to raise_error("Cannot add another player")
     end
   end
-  
 
-
+  describe '#start' do
+    it 'should start with two players' do
+      setup_new_game
+      subject.start
+      expect( subject.player1 ).to eq( player_x)
+      expect( subject.player2 ). to eq( player_o)
+    end
+  end
 end
