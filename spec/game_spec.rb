@@ -4,6 +4,7 @@ describe Game do
   let(:player_x) { double :player_x }
   let(:player_o) { double :player_o }
   let(:player_n) { double :player_n }
+  let(:board) { double :board }
 
   before do
     def setup_new_game
